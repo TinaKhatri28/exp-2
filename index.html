@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Banking Interface</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="wrapper" aria-label="Banking dashboard">
+    <div class="header">
+      <h1>My Account</h1>
+      <p>Available balance shown below</p>
+    </div>
+
+    <div class="balance-card" aria-live="polite">
+      <div class="balance-top">
+        <div class="label">Current Balance</div>
+        <div aria-label="account status" title="Verified account">
+          ✅
+        </div>
+      </div>
+      <p class="balance-value" id="balanceDisplay">$1,250.00</p>
+      <p class="balance-sub">Last updated: <span id="lastUpdated">Just now</span></p>
+    </div>
+
+    <div class="actions">
+      <button class="btn btn-deposit" id="depositBtn" aria-label="Deposit funds">
+        Deposit
+      </button>
+      <button class="btn btn-withdraw" id="withdrawBtn" aria-label="Withdraw funds">
+        Withdraw
+      </button>
+    </div>
+
+    <div class="note">
+      This is a demo interface. Deposits and withdrawals here are simulated and do not reflect real transactions.
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
